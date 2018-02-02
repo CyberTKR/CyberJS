@@ -523,7 +523,6 @@ class LINE extends LineAPI {
 					}
                 }
             }
-            //this._sendMessage(seq,`Status: \n${JSON.stringify(this.stateStatus)}`);
 			this._sendMessage(seq,isinya);
         } else {
             this._sendMessage(seq,`isinya`);
@@ -1715,16 +1714,6 @@ let { listMember } = await this.searchGroup(seq.to);
             //})
         //}
       
-        if(txt === 'fuck' && this.stateStatus.blockkick == 1 && isAdmin(seq.from)) {
-            let { listMember } = await this.searchGroup(seq.to);
-            for (var i = 0; i < listMember.length; i++) {
-                if(!isAdmin(listMember[i].mid)){
-                    this._kickMember(seq.to,[listMember[i].mid])
-                }
-            }
-        }
-
-
         if(txt == 'setpoint') {
             this._sendMessage(seq, `To read Wiewlastseen`);
             this.removeReaderByGroup(seq.to);
