@@ -1945,7 +1945,7 @@ let { listMember } = await this.searchGroup(seq.to);
                         this._sendMessage(seq,'Not Found');
                     }
                 } else {
-                    this._sendMessage(seq,'Location Not Found , Maybe di dalem goa');
+                    this._sendMessage(seq,'Location Not Found');
                 }
             })
         }
