@@ -16,26 +16,18 @@
 -╚══╝
 -▄ █ ▄ █ ▄ ▄ █ ▄ █ ▄ █
 -Min- - - - - - - - - - - -●Max 
--
--#
 -Bot İs Running
  http://github.com/CyberTKR/CyberJS.git
- cd CyberJS & npm install
- npm start
-#
-Line Contact ;
-(cybertk0)
-Url;
-http://line.me//ti/p/~cybertk0
-#
-CyberTKBOT BotProtect
-#
-Cybertk Bot scripti'dir.
-#
-Grup savunmasi amacli kullanilmalidir.
-#
-Baska herhangi bir amacla kullanilmak icin duzenlenmesinden ve, kullanilmasindan cybertk sorumlu degildir.
-#
-Instagram account : http://instagram.com/_aquariusman Youtube channnel : https://m.youtube.com/channel/UC9AyYKWovERexyOFy3h4rdw
+ -cd CyberJS & npm install
+ -npm start
+-Line Contact ;
+-(cybertk0)
+-Url;
+-http://line.me//ti/p/~cybertk0
+-CyberTKBOT BotProtect
+-Cybertk Bot scripti'dir.
+-Grup savunmasi amacli kullanilmalidir.
+-Baska herhangi bir amacla kullanilmak icin duzenlenmesinden ve, kullanilmasindan cybertk sorumlu degildir.
+-Instagram account : http://instagram.com/_aquariusman Youtube channnel : https://m.youtube.com/channel/UC9AyYKWovERexyOFy3h4rdw
 
  
