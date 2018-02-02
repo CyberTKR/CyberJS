@@ -528,9 +528,9 @@ class LINE extends LineAPI {
                 }
             }
             //this._sendMessage(seq,`Status: \n${JSON.stringify(this.stateStatus)}`);
-			this._sendMessage(seq,None);
+			this._sendMessage(seq,isinya);
         } else {
-            this._sendMessage(seq,``);
+            this._sendMessage(seq,`isinya`);
         }}
     }
 
