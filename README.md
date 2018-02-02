@@ -1,17 +1,11 @@
 
 #CyberJS
-#   ____     _                    ______  __
-#
-/ ___|   _| |__   ___ -_ -__   |_   _| |/ /
-#
+   ____      _                  _____ _  __
+ / ___|   _| |__   ___ _ __   |_   _| |/ /
 | |  | | | | '_ \ / _ \ '__|____| | | ' /
-#
 | |__| |_| | |_) |  __/ | |_____| | | . \
-#
  \____\__, |_.__/ \___|_|       |_| |_|\_\
- #
       |___/
-      #
 #    Continue To Follow Cyber-TK
 -    Node -V 8.4.0
 -    Node Version update 
@@ -25,14 +19,16 @@
  http://github.com/CyberTKR/CyberJS.git
  -cd CyberJS & npm install
  -npm start
--Line Contact ;
--(cybertk0)
--Url;
--http://line.me//ti/p/~cybertk0
--CyberTKBOT BotProtect
--Cybertk Bot scripti'dir.
--Grup savunmasi amacli kullanilmalidir.
--Baska herhangi bir amacla kullanilmak icin duzenlenmesinden ve, kullanilmasindan cybertk sorumlu degildir.
--Instagram account : http://instagram.com/_aquariusman Youtube channnel : https://m.youtube.com/channel/UC9AyYKWovERexyOFy3h4rdw
+-    Line Contact ;
+-    cybertk0)
+-    Url;
+-    http://line.me//ti/p/~cybertk0
+-    CyberTKBOT BotProtect
+-    Cybertk Bot scripti'dir.
+-    Grup savunmasi amacli kullanilmalidir.
+-    Baska herhangi bir amacla kullanilmak icin duzenlenmesinden ve, 
+-    kullanilmasindan cybertk sorumlu degildir.
+-    Instagram account : http://instagram.com/_aquariusman 
+-    Youtube channnel : https://m.youtube.com/channel/UC9AyYKWovERexyOFy3h4rdw
 
  
