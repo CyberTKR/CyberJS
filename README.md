@@ -26,7 +26,7 @@
 -    cybertk0)
 -    Url;
 -    http://line.me//ti/p/~cybertk0
--    CyberTKBOT BotProtect
+-    CyberTKBOT
 -    Cybertk Bot scripti'dir.
 -    Grup savunmasi amacli kullanilmalidir.
 -    Baska herhangi bir amacla kullanilmak icin duzenlenmesinden ve, 
