@@ -10,7 +10,8 @@
 -    Node -V 8.4.0
 -    Node Version update 
 -    npm i -g npm
-#║(O)║♫ ♪ ♫ ♪
+#
+-    ║(O)║♫ ♪ ♫ ♪
 -╚══╝
 -▄ █ ▄ █ ▄ ▄ █ ▄ █ ▄ █
 -Min- - - - - - - - - - - -●Max 
