@@ -10,12 +10,12 @@
 -    Node -V 8.4.0
 -    Node Version update 
 -    npm i -g npm
-#╔══╗
-#║██║
-#║(O)║♫ ♪ ♫ ♪
-#╚══╝
-#▄ █ ▄ █ ▄ ▄ █ ▄ █ ▄ █
-#Min- - - - - - - - - - - -●Max 
+-╔══╗
+-║██║
+-║(O)║♫ ♪ ♫ ♪
+-╚══╝
+-▄ █ ▄ █ ▄ ▄ █ ▄ █ ▄ █
+-Min- - - - - - - - - - - -●Max 
 #
 -Bot İs Running
  http://github.com/CyberTKR/CyberJS.git
