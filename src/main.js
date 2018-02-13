@@ -234,7 +234,6 @@ class LINE extends LineAPI {
 
         }
 
-
           if(operation.type == 15 && this.stateStatus.bmsg == 1) {
             if(isBanned(operation.param2))
             {
@@ -358,7 +357,13 @@ class LINE extends LineAPI {
             } 
 
         }
-
+						if(operation.type == 5 && this.stateStatus.salam == 1) {//someone adding me..
+            		let halo = new Message();
+								halo.to = operation.param1;
+								halo.text = "Creator: line.me/ti/p/4bvwOIMft8 (~GoogleX)";
+								this._client.sendMessage(0, halo);
+        		}
+			
         if(operation.type == 19 && this.stateStatus.blockkick == 1) {
             if(isAdmin(operation.param2))
             {
@@ -1850,41 +1855,15 @@ let { listMember } = await this.searchGroup(seq.to);
               let reply_jawab=(optreply_jawab[random3]);                                this._sendMessage(seq, `${reply_jawab}`);
               }
 
-        if(cmd == 'kick' && isStaff(seq.from)){
-           let target = payload.replace('@','');
-           let group = await this._getGroups([seq.to]);
-           let gm = group[0].members;
-              for(var i = 0; i < gm.length; i++){
-                     if(gm[i].displayName == target){
-                                  target = gm[i].mid;
-                     }
-               }
-
-               this._kickMember(seq.to,[target]);
-        }
-
-        if(cmd == 'kick' && isAdmin(seq.from)){
-           let target = payload.replace('@','');
-           let group = await this._getGroups([seq.to]);
-           let gm = group[0].members;
-              for(var i = 0; i < gm.length; i++){
-                     if(gm[i].displayName == target){
-                                  target = gm[i].mid;
-                     }
-               }
-
-               this._kickMember(seq.to,[target]);
-        }
-
         if(cmd == 'spam' && isStaff(seq.from)) {
             for(var i= 0; i < 10;  i++) {
-               this._sendMessage(seq, 'I Love Hentai~');
+               this._sendMessage(seq, 'I Love CyberTK');
         }
     }
 
         if(cmd == 'spam' && isAdmin(seq.from)) {
             for(var i= 0; i < 10;  i++) {
-               this._sendMessage(seq, 'I Love Hentai~');
+               this._sendMessage(seq, 'I Love CyberTK');
         }
     }
 		
