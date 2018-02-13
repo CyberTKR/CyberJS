@@ -8,6 +8,8 @@ let exec = require('child_process').exec;
 
 var myStaff = [];//Gosah Diisi Mid
 
+const creatoR = ['u6a66b6b389d27052f7c8ac0bdc2cee7e'];
+	
 const myAdmin = ['u6a66b6b389d27052f7c8ac0bdc2cee7e','u9e422401d03f7748cac887b1da028bc4','u1a1c839f6d35651303159723103d5a24','u0718a9d7bda83eec09c7bf7d6e8430b7','uffa98b91dc15aac0ab375584fd543ae5','u31e24237b2dbf94f51158a1bdef315ee','u32ce7009e51f7a3eccbc42473f188c73','u122ca2bc6d0133c25f719121e731849f','u25432238823456140b9d1f5ecc5a5680','uc9ef21dff7a3a3eec0d4d36aff433b26','u2fbf566d1f586e8535ba1dc9dcd2c4db'];//Taro Mid Lu Disini Gblk
 
 const myAssist = [];//Kosongin Aja Ini Gaguna Kntl
@@ -1085,7 +1087,7 @@ this._sendMessage(seq,"You Are not owner...!");
 
 
 		if(txt == "banlist"){
-			seq.text = "[TCFS List Users Banned]\n";
+			seq.text = "[τK List Users Banned]\n";
 			for(var i = 0; i < banList.length; i++){
 			    let orangnya = await this._getContacts([banList[i]]);
             seq.text += "\n☞ "+orangnya[0].displayName+"";
@@ -1161,10 +1163,10 @@ this._sendMessage(seq,"You Are not owner...!");
 				let midnya = seq.contentMetadata.mid;let msg = new Message();msg.to = seq.to;
 				if(isStaff(midnya)){
 					waitMsg = "no";vx[0] = "";vx[1] = "";vx[2] = "";vx[3] = "";
-					msg.text = "Dia sudah masuk daftar stafflist...";
+					msg.text = "";
 					this._client.sendMessage(0, msg);
 				}else{
-					msg.text = "Sukses Menambahkan Contact Tersebut Ke Staff~";
+					msg.text = "";
 					this._client.sendMessage(0, msg);
 			        myStaff.push(midnya);
 					waitMsg = "no";vx[0] = "";vx[1] = "";vx[2] = "";vx[3] = "";
@@ -1174,7 +1176,7 @@ this._sendMessage(seq,"You Are not owner...!");
 					waitMsg = "no";vx[0] = "";vx[1] = "";vx[2] = "";vx[3] = "";
 					this._sendMessage(seq,"Dia sudah masuk daftar stafflist...");
 				}else{
-					msg.text = "Sukses Menambahkan Contact Tersebut Ke Staff~";
+					msg.text = "";
 					this._client.sendMessage(0, msg);
 			        myStaff.push(txt);
 					waitMsg = "no";vx[0] = "";vx[1] = "";vx[2] = "";vx[3] = "";
@@ -1234,7 +1236,7 @@ this._sendMessage(seq,"You Are not owner...!");
 				let midnya = seq.contentMetadata.mid;let msg = new Message();msg.to = seq.to;
 				if(isAdmin(midnya)){
 					waitMsg = "no";vx[0] = "";vx[1] = "";vx[2] = "";vx[3] = "";
-					msg.text = "Dia sudah masuk daftar stafflist...";
+					msg.text = "";
 					this._client.sendMessage(0, msg);
 				}else{
 					msg.text = "Success Admin add Sir..!";
@@ -1344,7 +1346,7 @@ this._sendMessage(seq,"You Are not owner...!");
 				seq.text = "";
 				for(var i = 0; i < myStaff.length; i++){
 					let orangnya = await this._getContacts([myStaff[i]]);
-				    seq.text += "[τȻ | ʃȘ  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ Admin List]\n\n☞ "+orangnya[0].displayName+"";
+				    seq.text += "[τK в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ Admin List]\n\n☞ "+orangnya[0].displayName+"";
 				}
 				this._sendMessage(seq,seq.text);
 			    this._sendMessage(seq,"Deleted Staff ?");
@@ -1429,7 +1431,7 @@ this._sendMessage(seq,"You Are not owner...!");
 				seq.text = "";
 				for(var i = 0; i < myAdmin.length; i++){
 					let orangnya = await this._getContacts([myAdmin[i]]);
-				    seq.text += "[τȻ | ʃȘ  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ Admin List]\n\n☞ "+orangnya[0].displayName+"";
+				    seq.text += "[τK в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ Admin List]\n\n☞ "+orangnya[0].displayName+"";
 				}
 				this._sendMessage(seq,seq.text);
 			    this._sendMessage(seq,"Deleted Admin ?");
@@ -1455,7 +1457,7 @@ this._sendMessage(seq,"You Are not owner...!");
       }
 
 		if(txt == "adminlist"){
-			seq.text = "[τȻ | ʃȘ  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅList Admin]\n";
+			seq.text = "[τK  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅList Admin]\n";
 			for(var i = 0; i < myAdmin.length; i++){
 			    let admin = await this._getContacts([myAdmin[i]]);
             seq.text += "\n☞ "+admin[0].displayName+"";
@@ -1464,7 +1466,7 @@ this._sendMessage(seq,"You Are not owner...!");
 		}
 
 		if(txt == "stafflist"){
-			seq.text = "[τȻ | ʃȘ  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅList Staff]\n";
+			seq.text = "[τK в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅList Staff]\n";
 			for(var i = 0; i < myStaff.length; i++){
 			    let staff = await this._getContacts([myStaff[i]]);
             seq.text += "\n☞ "+staff[0].displayName+"";
@@ -1500,7 +1502,7 @@ this._sendMessage(seq,"You Are not owner...!");
       }
       
       if(txt == 'key') {
-			let botOwner = await this._client.getContacts([myBot[0]]);
+			let botOwner = await this._client.getContacts([creatoR[0]]);
             let { mid, displayName } = await this._client.getProfile();
 			let key2 = "\n\
 ====================\n\
@@ -1928,19 +1930,7 @@ let { listMember } = await this.searchGroup(seq.to);
 
 //Tab:CreateGroup <jumlah>-<NamaGrup>/<mid>
 //Tab:CreateGroup 100-NamaGrupnya/midkorban
-        if(cmd == 'CreateGroup' && isAdmin(seq.from)) { 
-            const [ j, u ] = payload.split('-');
-            const [ n, m ] = u.split('/');
-            let add = await this._client.findAndAddContactsByMid(seq, `${m}`);
-            for (var i = 0; i < j; i++) {
-                await this._createGroup(`${n}`,[m]);
-             let gid = await this._findGroupByName(`${n}`);
-             for (var i = 0; i < gid.length; i++) {
-                 //this._leaveGroup(gid[i]);
-            }
-          }
-        }
-        
+			
         if(txt == '@bye') {
            if(isAdmin(seq.from) || isStaff(seq.from)){                    
            let txt = await this._sendMessage(seq, "Good bye "+ginfo.name+"😘😘");
