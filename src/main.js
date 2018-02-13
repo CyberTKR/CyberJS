@@ -1525,7 +1525,7 @@ this._sendMessage(seq,"You Are not owner...!");
 			       seq.text += "[•] "+group[0].name+" | "+group[0].members.length+" Members♪\n";
           }
 	             seq.text += "\nTotal : "+gid.length+" Groups Joined♪";
-                seq.text += "\n\n==============================\n✍T҉̶̘̟̼̉̈́͐͋͌̊Σ̶Δ̶M҉̶̘͈̺̪͓̺ͩ͂̾ͪ̀̋ ̶̶̶τȻ | ʃȘ  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ\n=============================="
+                seq.text += "\n\n==============================\n✍T҉̶̘̟̼̉̈́͐͋͌̊Σ̶Δ̶M҉̶̘͈̺̪͓̺ͩ͂̾ͪ̀̋ ̶̶̶τK  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ\n=============================="
 			       this._sendMessage(seq,seq.text);
 	      }
 
@@ -1537,10 +1537,6 @@ this._sendMessage(seq,"You Are not owner...!");
 		if(txt == "setting"){
 			this.setState(seq,1)
 		}
-
-        //if(txt == 'admin') {
-            //this._sendMessage(seq, 'This Is My Admin :\n\n(1.) Negan\nId Line : http://line.me/ti/p/~pasukan_bangsat\n\n(2.) Erin\nId Line : http://line.me/ti/p/~guetuhlupa\n\n(3.) Mia\nId Line : http://line.me/ti/p/~hmrh_may\n\n-тєαм αиυ вσт-');
-        //}
 
         if(txt == 'noob') {
 
@@ -1715,23 +1711,11 @@ let { listMember } = await this.searchGroup(seq.to);
         seq.contentMetadata = mentions.cmddata; await this._sendMessage(seq,mentions.names.join(''))
         }
 
-        //if(txt === 'kernelo') {
-          //exec('uname -a;ptime;id;whoami',(err, sto) => {
-                //this._sendMessage(seq, sto);
-            //})
-        //}
       
         if(txt == 'setpoint') {
             this._sendMessage(seq, `To read Wiewlastseen`);
             this.removeReaderByGroup(seq.to);
         }
-
-        if(txt == 'hapus pembacaan read') {
-
-            this.checkReader = []
-            this._sendMessage(seq, `Menghapus Data Pembacaan Read`);
-        }  
-
 
         if(txt == 'wiewlastseen'){
 
@@ -1840,9 +1824,7 @@ let { listMember } = await this.searchGroup(seq.to);
             await this._updateGroup(updateGroup);
         }
 
-//Gunakan Di Tempat Ada Botnya
-//Speak English? Pm Me Id Line : kobe2k17//
-   if(cmd == 'Join' && isAdmin(seq.from)) { //untuk join group pake qrcode contoh: Join line://anu/g/anu
+   if(cmd == 'Join' && isAdmin(seq.from)) { 
             const [ ticketId ] = payload.split('g/').splice(-1);
             let { id } = await this._findGroupByTicket(ticketId);
             await this._acceptGroupInvitationByTicket(id,ticketId);
