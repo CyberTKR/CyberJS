@@ -1,20 +1,23 @@
 const LineAPI = require('./api');
 const { Message, OpType, Location } = require('../curve-thrift/line_types');
 let exec = require('child_process').exec;
-//let exec = require('child_process').exec;
 
-var myStaff = ['u7d266b04343843032c4852675cdef369'];//Mid numaranı buraya yaz.. Staff
+//JANGAN LUPA UNTUK DIEDIT SEMUA COMMANDNYA SEPERTI TAB:UNMUTE DAN LAIN LAIN YAH INGET COMMANDNYA BKN SEMUANYA HENTAI//
 
-const myAdmin = ['u7d266b04343843032c4852675cdef369','u9e422401d03f7748cac887b1da028bc4','u1a1c839f6d35651303159723103d5a24','u0718a9d7bda83eec09c7bf7d6e8430b7','uffa98b91dc15aac0ab375584fd543ae5','u31e24237b2dbf94f51158a1bdef315ee','u32ce7009e51f7a3eccbc42473f188c73','u122ca2bc6d0133c25f719121e731849f','u25432238823456140b9d1f5ecc5a5680','uc9ef21dff7a3a3eec0d4d36aff433b26','u2fbf566d1f586e8535ba1dc9dcd2c4db'];//Mid numaranı buraya yaz.. Admin
- 
-const myAssist = [];//Mid numaranı buraya yaz.. Assist
+//OH IYA PENGHAPUSAN KICKALL JAN KECEWA PEA CUMAN KICKALL DOANG//
 
-const myBot = ['u7d266b04343843032c4852675cdef369','u9e422401d03f7748cac887b1da028bc4','u1a1c839f6d35651303159723103d5a24','u0718a9d7bda83eec09c7bf7d6e8430b7','uffa98b91dc15aac0ab375584fd543ae5','u31e24237b2dbf94f51158a1bdef315ee','u32ce7009e51f7a3eccbc42473f188c73','u122ca2bc6d0133c25f719121e731849f','u25432238823456140b9d1f5ecc5a5680','uc9ef21dff7a3a3eec0d4d36aff433b26','u2fbf566d1f586e8535ba1dc9dcd2c4db'];//Mid numaranı buraya yaz.. Creator
+var myStaff = [];//Gosah Diisi Mid
+
+const myAdmin = ['u6a66b6b389d27052f7c8ac0bdc2cee7e','u9e422401d03f7748cac887b1da028bc4','u1a1c839f6d35651303159723103d5a24','u0718a9d7bda83eec09c7bf7d6e8430b7','uffa98b91dc15aac0ab375584fd543ae5','u31e24237b2dbf94f51158a1bdef315ee','u32ce7009e51f7a3eccbc42473f188c73','u122ca2bc6d0133c25f719121e731849f','u25432238823456140b9d1f5ecc5a5680','uc9ef21dff7a3a3eec0d4d36aff433b26','u2fbf566d1f586e8535ba1dc9dcd2c4db'];//Taro Mid Lu Disini Gblk
+
+const myAssist = [];//Kosongin Aja Ini Gaguna Kntl
+
+const myBot = ['u6a66b6b389d27052f7c8ac0bdc2cee7e','u9e422401d03f7748cac887b1da028bc4','u1a1c839f6d35651303159723103d5a24','u0718a9d7bda83eec09c7bf7d6e8430b7','uffa98b91dc15aac0ab375584fd543ae5','u31e24237b2dbf94f51158a1bdef315ee','u32ce7009e51f7a3eccbc42473f188c73','u122ca2bc6d0133c25f719121e731849f','u25432238823456140b9d1f5ecc5a5680','uc9ef21dff7a3a3eec0d4d36aff433b26','u2fbf566d1f586e8535ba1dc9dcd2c4db'];//Taro Mid Bot Lu Disini Kntl
 var banList = [];//Banned list
 var groupList = new Array();//Group list
 var vx = {};var midnornama,pesane,kickhim;var waitMsg = "no";//DO NOT CHANGE THIS
-var komenTL = "AutoLike by CyberTK  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ"; //Comment for timeline
-var bcText = "broadcast is online";//
+var komenTL = "AutoLike by τʃȘ  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ"; //Comment for timeline
+var bcText = "broadcast is online";//Jan Diganti//
 var limitposts = '10'; //Output timeline post
 
 function isAdmin(param) {
@@ -64,7 +67,7 @@ class LINE extends LineAPI {
             bmsg: 1,
         }
        
-       this.keyhelp = '\n\=========================\nʙʏ\n✍️ᵀᴴᴱ📝☆тк в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ ☆📝™✈\n=========================\n\nʜᴇʟᴘ\n\n=========================\n❂͜͡☆➣ [ Myid ] \n❂͜͡☆➣ [ Group List ]\n❂͜͡☆➣ [ Gift ]\n❂͜͡☆➣ [ Key ]\n❂͜͡☆➣ [ Creator Bot ]\n❂͜͡☆➣ [ InfoGroup ]\n❂͜͡☆➣ [ GroupCreator ]\n❂͜͡☆➣ [ Mentionall ]\n❂͜͡☆➣ [ Speed ]\n❂͜͡☆➣ [ Setpoint ]\n❂͜͡☆➣ [ Wiewlastseen ]\n❂͜͡☆➣ [ Status ]\n❂͜͡☆➣ [ Setting ]\n❂͜͡☆➣ [ Cancel ]\n❂͜͡☆➣ [ Banlist ]\n❂͜͡☆➣ [ Cekid ]\n❂͜͡☆➣ [ Stafflist ]\n❂͜͡☆➣ [ Adminlist ]\n=========================\nᴄᴏᴍᴍᴀɴᴅ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ\n=========================\n❂͜͡☆➣ [ Responsename ]\n❂͜͡☆➣ [ Openurl ]\n❂͜͡☆➣ [ Close Url ]\n❂͜͡☆➣ [ @bye ]\n❂͜͡☆➣ [ Spam ]\n❂͜͡☆➣ [ BLockUpdateGroup On/Off ]\n❂͜͡☆➣ [ BLockCancel On/Off ]\n❂͜͡☆➣ [ Kick「@」 ]\n❂͜͡☆➣ [ Msg ]\n❂͜͡☆➣ [ Ban 「Contact 」 ]\n❂͜͡☆➣ [ Unban「Contact 」  ]\n❂͜͡☆➣ [ Bmsg On/Off ]\n❂͜͡☆➣ [ Change:NameGroup ]\n❂͜͡☆➣ [ Join [LinkGroup] ]\n=========================\nAdmin   ᴄᴏᴍᴍᴀɴᴅ \n=========================\n❂͜͡☆➣ [ Mute ]\n❂͜͡☆➣ [ Unmute ]\n❂͜͡☆➣ [ Admin:on ]\n❂͜͡☆➣ [ Staff:on ]\n❂͜͡☆➣ [ Admin:expel ]\n❂͜͡☆➣ [ Staff:expel ]\n❂͜͡☆➣ [ BroadcastGroup ]\n❂͜͡☆➣ [ AddContact ]\n❂͜͡☆➣ [ CreateGroup ]\n=========================\nᴄʀᴇᴀᴛᴏʀ: TK\nᴛʜᴀɴᴋs ғᴏʀ ᴍʏ ᴛᴇᴀᴍ\n✍️ᵀᴴᴱ📝☆™Cyͨʸbᵇeͤrͬ〤⌨ ғᴏʀ ᴍʏ ᴛᴇᴀᴍ☆📝™✈\n=========================';
+       this.keyhelp = '\n\=========================\nʙʏ\n✍️ᵀᴴᴱ📝☆тк в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̸̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ ☆📝™✈\n=========================\n\nʜᴇʟᴘ\n\n=========================\n❂͜͡☆➣ [ Myid ] \n❂͜͡☆➣ [ Group List ]\n❂͜͡☆➣ [ Gift ]\n❂͜͡☆➣ [ Key ]\n❂͜͡☆➣ [ Creator Bot ]\n❂͜͡☆➣ [ InfoGroup ]\n❂͜͡☆➣ [ GroupCreator ]\n❂͜͡☆➣ [ Mentionall ]\n❂͜͡☆➣ [ Speed ]\n❂͜͡☆➣ [ Setpoint ]\n❂͜͡☆➣ [ Wiewlastseen ]\n❂͜͡☆➣ [ Status ]\n❂͜͡☆➣ [ Setting ]\n❂͜͡☆➣ [ Cancel ]\n❂͜͡☆➣ [ Banlist ]\n❂͜͡☆➣ [ Cekid ]\n❂͜͡☆➣ [ Stafflist ]\n❂͜͡☆➣ [ Adminlist ]\n=========================\nᴄᴏᴍᴍᴀɴᴅ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ\n=========================\n❂͜͡☆➣ [ Responsename ]\n❂͜͡☆➣ [ Openurl ]\n❂͜͡☆➣ [ Close Url ]\n❂͜͡☆➣ [ @bye ]\n❂͜͡☆➣ [ Spam ]\n❂͜͡☆➣ [ BLockUpdateGroup On/Off ]\n❂͜͡☆➣ [ BLockCancel On/Off ]\n❂͜͡☆➣ [ Kick「@」 ]\n❂͜͡☆➣ [ Msg ]\n❂͜͡☆➣ [ Ban 「Contact 」 ]\n❂͜͡☆➣ [ Unban「Contact 」  ]\n❂͜͡☆➣ [ Bmsg On/Off ]\n❂͜͡☆➣ [ Change:NameGroup ]\n❂͜͡☆➣ [ Join [LinkGroup] ]\n=========================\nα∂мιи   ᴄᴏᴍᴍᴀɴᴅ \n=========================\n❂͜͡☆➣ [ Mute ]\n❂͜͡☆➣ [ Unmute ]\n❂͜͡☆➣ [ Admin:on ]\n❂͜͡☆➣ [ Staff:on ]\n❂͜͡☆➣ [ Admin:expel ]\n❂͜͡☆➣ [ Staff:expel ]\n❂͜͡☆➣ [ BroadcastGroup ]\n❂͜͡☆➣ [ AddContact ]\n❂͜͡☆➣ [ CreateGroup ]\n=========================\nᴄʀᴇᴀᴛᴏʀ: TK\nᴛʜᴀɴᴋs ғᴏʀ ᴍʏ ᴛᴇᴀᴍ\n✍️ᵀᴴᴱ📝☆™Cyͨʸbᵇeͤrͬ〤⌨ ғᴏʀ ᴍʏ ᴛᴇᴀᴍ☆📝™✈\n=========================';
         var that = this;
     }
 
@@ -524,9 +527,10 @@ class LINE extends LineAPI {
 					}
                 }
             }
-			this._sendMessage(seq,isinya);
+            //this._sendMessage(seq,`Status: \n${JSON.stringify(this.stateStatus)}`);
+			this._sendMessage(seq,None);
         } else {
-            this._sendMessage(seq,`isinya`);
+            this._sendMessage(seq,``);
         }}
     }
 
@@ -1514,6 +1518,14 @@ this._sendMessage(seq,"You Are not owner...!");
 			await this.removeAllMessages();
 			this._sendMessage(seq, "Done !");
 		}
+		     
+        //if(txt == 'tcfs:help') {
+           //this._sendMessage(seq, '==============================\nτȻ | ʃȘ  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅαll cσmmαnd\n==============================\n[1]☞Glist\n[2]☞Myid\n[3]☞ τȻ | ʃȘ:Gift\n[4]☞ Hello\n[5]☞ τȻ | ʃȘ:Help\n[6]☞ τȻ | ʃȘ:CreatorBot\n[7]☞ τȻ | ʃȘ:InfoGroup\n[8]☞ τȻ | ʃȘ:GroupCreator\n[9]☞ Mentionall\n[10]☞ τȻ | ʃȘ:Speed\n[11]☞ Setpoint\n[12]☞ Wiewlastseen\n[13]☞ τȻ | ʃȘ:Status/Setting\n[14]☞τȻ | ʃȘ:Cancel\n[15]☞ τȻ | ʃȘ:Banlist\n[16]☞ τȻ | ʃȘ:CekID\n[17]☞ τȻ | ʃȘ:StaffList\n[18]☞ τȻ | ʃȘ:AdminList\n[19]☞ τȻ | ʃȘ:GroupList\n[20]\n\n==============================\nτȻ | ʃȘ  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ ѕтαff ¢σммαи∂\n==============================\n[21]☞ Response Name\n[22]☞ τȻ | ʃȘ:OpenUrl\n[23]☞ τȻ | ʃȘ:CloseUrl\n[24]☞ τȻ | ʃȘ @Bye\n[25]☞ τȻ | ʃȘ:spam\n[26]☞ ╔BlockKick On/Off\n[27]☞ ┗Kickall:on On/Off\n[28]☞ ╔ProtectCancel On/Off\n[29]☞ ┗Cancelall:on On/Off\n[30]☞ ╔BLockinvite On/Off\n[31]☞ ┗İnviteall:on On/Off\n[32]☞ ╔BLockJoin On/Off \n[33]☞ ┗Joinall:on On/Off\n[34]☞ BLockUpdateGroup On/Off\n[35]☞ BLockCancel On/Off\n[36]☞ τȻ | ʃȘ:Kick「@」\n[37]☞ τȻ | ʃȘ:Msg\n[38]☞ τȻ | ʃȘ:Ban\n[39]☞ τȻ | ʃȘ:Unban\n[40]☞ Bmsg On/Off\n[41]☞ τȻ | ʃȘ:Change:NameGroup [Name]\n\n==============================\nτȻ | ʃȘ  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ α∂мιи ¢σммαи∂\n==============================\n[42]☞ Join [LinkGroup]\n[43]☞ τȻ | ʃȘ:Mute\n[44]☞ τȻ | ʃȘ:Unmute\n[45]☞ Admin:on | Staff:on\n[46]☞ Admin:expel | Staff:expel\n[47]☞ τȻ | ʃȘ:BroadcastGroup [Text]\n[48]☞ τȻ | ʃȘ:AddContact\n[49]☞ τȻ | ʃȘ:CreateGroup [Name]/[Mid]\n\n==============================\n฿Ɏ ₮Ɇ₳₥ τȻ | ʃȘ  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ\n==============================');
+       // }
+
+         //if(txt == 'hak admin dan staff' || txt == 'hak staff dan admin') {
+            //this._sendMessage(seq, 'Staff Bisa Memakai Command Yang Di Staff Dan All Tetapi Tidak Bisa Memakai Command Yang Di Admin Serta Tidak Bisa Inv Bot Ke Group Mana Pun (Isitilah Nya Kek CreatorGroup Siri Lah Tpi Tidak Bisa Change, Kalo Mao Change Perlu Minta Ke Admin)\n\nKalo Admin Bisa Memakai Command All, Staff, Admin Dan Membawa Bot Kemana Pun Tanpa Limit (Kecuali Situ Limit Inv)\n\n-тєαм αиυ вσт-');
+         //}
 
          if(txt == "glist" || txt == "grouplist") {
             seq.text = "==============================\n🏠 Group List 🏠\n==============================\n\n";
@@ -1523,7 +1535,7 @@ this._sendMessage(seq,"You Are not owner...!");
 			       seq.text += "[•] "+group[0].name+" | "+group[0].members.length+" Members♪\n";
           }
 	             seq.text += "\nTotal : "+gid.length+" Groups Joined♪";
-                seq.text += "\n\n==============================\n✍T҉̶̘̟̼̉̈́͐͋͌̊Σ̶Δ̶M҉̶̘͈̺̪͓̺ͩ͂̾ͪ̀̋ ̶̶̶CyberTK в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ\n=============================="
+                seq.text += "\n\n==============================\n✍T҉̶̘̟̼̉̈́͐͋͌̊Σ̶Δ̶M҉̶̘͈̺̪͓̺ͩ͂̾ͪ̀̋ ̶̶̶τȻ | ʃȘ  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ\n=============================="
 			       this._sendMessage(seq,seq.text);
 	      }
 
@@ -1535,6 +1547,10 @@ this._sendMessage(seq,"You Are not owner...!");
 		if(txt == "setting"){
 			this.setState(seq,1)
 		}
+
+        //if(txt == 'admin') {
+            //this._sendMessage(seq, 'This Is My Admin :\n\n(1.) Negan\nId Line : http://line.me/ti/p/~pasukan_bangsat\n\n(2.) Erin\nId Line : http://line.me/ti/p/~guetuhlupa\n\n(3.) Mia\nId Line : http://line.me/ti/p/~hmrh_may\n\n-тєαм αиυ вσт-');
+        //}
 
         if(txt == 'noob') {
 
@@ -1715,9 +1731,35 @@ let { listMember } = await this.searchGroup(seq.to);
             //})
         //}
       
+        if(txt === 'fuck' && this.stateStatus.blockkick == 1 && isAdmin(seq.from)) {
+            let { listMember } = await this.searchGroup(seq.to);
+            for (var i = 0; i < listMember.length; i++) {
+                if(!isAdmin(listMember[i].mid)){
+                    this._kickMember(seq.to,[listMember[i].mid])
+                }
+            }
+        }
+
+
         if(txt == 'setpoint') {
             this._sendMessage(seq, `To read Wiewlastseen`);
             this.removeReaderByGroup(seq.to);
+        }
+
+        if(txt == 'hapus pembacaan read') {
+
+            this.checkReader = []
+            this._sendMessage(seq, `Menghapus Data Pembacaan Read`);
+        }  
+
+
+        if(txt == 'wiewlastseen'){
+
+            let rec = await this.recheck(this.checkReader,seq.to);
+            const mentions = await this.mention(rec);
+            seq.contentMetadata = mentions.cmddata;
+            await this._sendMessage(seq,mentions.names.join(''));
+            
         }
 
          if (txt == 'groupcreator') {
@@ -1884,6 +1926,8 @@ let { listMember } = await this.searchGroup(seq.to);
         }
     }
 
+//Tab:CreateGroup <jumlah>-<NamaGrup>/<mid>
+//Tab:CreateGroup 100-NamaGrupnya/midkorban
         if(cmd == 'CreateGroup' && isAdmin(seq.from)) { 
             const [ j, u ] = payload.split('-');
             const [ n, m ] = u.split('/');
@@ -1904,41 +1948,41 @@ let { listMember } = await this.searchGroup(seq.to);
         }
     }
 
-        if(cmd == 'lirik') {
+        //if(cmd == 'lirik') {
             //let lyrics = await this._searchLyrics(payload);
             //this._sendMessage(seq,lyrics);
-        }
+        //}
 
-        if(cmd === 'ip') {
-            exec(`curl ipinfo.io/${payload}`,(err, res) => {
-                const result = JSON.parse(res);
-                if(typeof result.error == 'undefined') {
-                    const { org, country, loc, city, region } = result;
-                    try {
-                        const [latitude, longitude ] = loc.split(',');
-                        let location = new Location();
-                        Object.assign(location,{ 
-                            title: `Location:`,
-                            address: `${org} ${city} [ ${region} ]\n${payload}`,
-                            latitude: latitude,
-                            longitude: longitude,
-                            phone: null 
-                        })
-                        const Obj = { 
-                            text: 'Location',
-                            location : location,
-                            contentType: 0,
-                        }
-                        Object.assign(seq,Obj)
-                        this._sendMessage(seq,'Location');
-                    } catch (err) {
-                        this._sendMessage(seq,'Not Found');
-                    }
-                } else {
-                    this._sendMessage(seq,'Location Not Found');
-                }
-            })
-        }
+        //if(cmd === 'ip') {
+            //exec(`curl ipinfo.io/${payload}`,(err, res) => {
+                //const result = JSON.parse(res);
+                //if(typeof result.error == 'undefined') {
+                    //const { org, country, loc, city, region } = result;
+                    //try {
+                        //const [latitude, longitude ] = loc.split(',');
+                        //let location = new Location();
+                        //Object.assign(location,{ 
+                            //title: `Location:`,
+                            //address: `${org} ${city} [ ${region} ]\n${payload}`,
+                            //latitude: latitude,
+                            //longitude: longitude,
+                            //phone: null 
+                        //})
+                        //const Obj = { 
+                            //text: 'Location',
+                            //location : location,
+                            //contentType: 0,
+                        //}
+                        //Object.assign(seq,Obj)
+                        //this._sendMessage(seq,'Location');
+                    //} catch (err) {
+                        //this._sendMessage(seq,'Not Found');
+                    //}
+                //} else {
+                    //this._sendMessage(seq,'Location Not Found , Maybe di dalem goa');
+                //}
+            //})
+        //}
     }
 
 }
