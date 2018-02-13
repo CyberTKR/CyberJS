@@ -1,4 +1,5 @@
 const LineConnect = require('./connect');
+const LINE = require('./main.js');
 console.info("\n\
 ╔══╗\n\
 ║██║\n\
@@ -44,17 +45,16 @@ console.info("\n\
 BotName: LINE Cyber: JS\n\
 Version: FORKED VERSION\n\
 Thanks to @CyberTK @TKR_TEAM\n\
-=========================================\n\
-");
+=========================================");
 
-/*[̲̝̫̣̥̝͓͖̠̳̪̯̥̳̲͒̽̀ͩ̊̅̉ͤ̐͒ͬ́̒ͧ̅͑ͪ̏̉̿̃͑̈́͒̈́̎C̺̲͎̞̗͕͙̗̳̰̣͓̹̻̥̻̻̲̺̺̫̼͔̮ͬ͒ͧ̾̋͂ͯͤ̓̐ͧͨ̍̅̌̊̇ͪ̊ͣ̐ͯ̚̚][̜̻̰͉̬̹͎͕̩̦͉̜̙̲ͬ̉͒̈́͂́̅͑̏̍̽ͩ̉͊ͪ̃̄ͪͭͯ̑ͩ̂́ͨ̓ͭ̚Ỹ̥̱̝̹͇͓̲̈̀͐̅ͪͯ]̆̒ͯͯ[͔̖͖̥̝̻̝̼̗̲̰̹̥̤̼͍̽̇̅B̘̱̬̗̱̤̟̩̳̱̱͎̜͍̝̣̘̙̲̥̼̜͖̮̭̳̭̟̻̌̐̓͋̃͗͊ͫ̑͗̅́͑͑͒͆͂̔ͤ̀ͬ͐͊͆̓͆̿̍̔̓ͅ]̖͚͍̹͍͇̥͙̳̺ͬͯͦ̀ͧͬ͊̋̏̀[̭̻̫̳͇̣͈͕̘̙̬͓͚͎̣̜̙͕̱͓̟̹̭̥̟̟̲͔̼̭̜͍̙̯͒̑̔̌́̉͊̽̒̔ͥ̈̀ͥ͐̅E͙̳̦̫̩̗͕̦͉̲̖̙̥̝͔͙͈͈̣̥̟͕͙̅̿̋̿̇̂̑̎ͥ́͌͂̔̀]̦͙͉̦͙̥̟̪͔̺̹̺̙̠͍͂ͣ͊̐͋́̍ͯ͌̇̋̉͑̆ͩ[̞͕͔̠̜̠̲̖̗̮͙̳̞̜͖͚͓̲͓͙̠͖͍̟̥̣̦̜͕̻̹̙͂̎͂ͬ̅ͧ̀̐̿ͭ̄̆̿ͦͨͧ͋̀̚R̞̼͎͉͚̟̺̟̝̹̰̲̅ͅ]̆̀̈́̅́͒̀ͧ̚[̤̗̳͙̰͈͓̜͔͖͈̥͇̭͖̗̘̳̣̝͓̫͕̲̝͓̠̠̩̞̥͖̅̓̂̓͛́̒͛̔͂ͮ̂ͨ̃̉͊̋̏̂͌ͅṬ̺̪͚̝͔͉̺̩̺͔̙̙͇̲̹̗̼̖̭̲̱̮̼̥̅ͬ̅ͨ͐ͪ̐̓̈́ͣͮͫͧͮ̈ͤ̒ͫ͛]̘̳͎̻̤̲̘̜̭͔ͪ͛̾͆ͤͬ̌̈͛ͯ[̭̩̲͖̗̲̐͛ͯ̉̐̂̈ͭ̈́̅̓̐̏͋̇̚K̼̰̜̦̤̘̖̯̰͇͓̜͈̗̝̟͍̼̮̘̗̩͓͓̯̲̠̪͔͖̠͙̅̆̑̄͒̍̅̊͐̓̚̚]̦̭̿̐
+/*
+| This constant is for auth/login
 | 
-| 
-|
+| Change it to your authToken / your email & password
 */
 const auth = {
-	authToken: '',
-	certificate: '',
+	authToken: 'EpVxGGsMzoDrtkDD5TY6.aEh9bEAORRcBHLTrAIW1bG.dcbtVX2HKmqfa1zqczvIB58ASwp1oE0TvNDRutnXjyY=',
+	certificate: '7cc23596baa3eacf955d8add2245c46348df22b6b0988a12c98e04bce9bcc966',
 	email: '',
 	password: ''
 }
@@ -75,6 +75,6 @@ client.startx().then(async (res) => {
 				LINE.poll(ops[op])
 			}
 		}
-		
+		//LINE.aLike() //AutoLike (CAUSE LAG)
 	}
 });
