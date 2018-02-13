@@ -2,19 +2,15 @@ const LineAPI = require('./api');
 const { Message, OpType, Location } = require('../curve-thrift/line_types');
 let exec = require('child_process').exec;
 
-//JANGAN LUPA UNTUK DIEDIT SEMUA COMMANDNYA SEPERTI TAB:UNMUTE DAN LAIN LAIN YAH INGET COMMANDNYA BKN SEMUANYA HENTAI//
+var myStaff = [];//Mid numaranı buraya yaz.. Staff
 
-//OH IYA PENGHAPUSAN KICKALL JAN KECEWA PEA CUMAN KICKALL DOANG//
-
-var myStaff = [];//Gosah Diisi Mid
-
-const creatoR = ['u6a66b6b389d27052f7c8ac0bdc2cee7e'];
+const toLga = ['u6a66b6b389d27052f7c8ac0bdc2cee7e'];
 	
-const myAdmin = ['u6a66b6b389d27052f7c8ac0bdc2cee7e','u9e422401d03f7748cac887b1da028bc4','u1a1c839f6d35651303159723103d5a24','u0718a9d7bda83eec09c7bf7d6e8430b7','uffa98b91dc15aac0ab375584fd543ae5','u31e24237b2dbf94f51158a1bdef315ee','u32ce7009e51f7a3eccbc42473f188c73','u122ca2bc6d0133c25f719121e731849f','u25432238823456140b9d1f5ecc5a5680','uc9ef21dff7a3a3eec0d4d36aff433b26','u2fbf566d1f586e8535ba1dc9dcd2c4db'];//Taro Mid Lu Disini Gblk
+const myAdmin = ['u6a66b6b389d27052f7c8ac0bdc2cee7e'];//Mid numaranı buraya yaz..  Admin
 
-const myAssist = [];//Kosongin Aja Ini Gaguna Kntl
+const myAssist = [];//Mid numaranı buraya yaz..  Assist
 
-const myBot = ['u6a66b6b389d27052f7c8ac0bdc2cee7e','u9e422401d03f7748cac887b1da028bc4','u1a1c839f6d35651303159723103d5a24','u0718a9d7bda83eec09c7bf7d6e8430b7','uffa98b91dc15aac0ab375584fd543ae5','u31e24237b2dbf94f51158a1bdef315ee','u32ce7009e51f7a3eccbc42473f188c73','u122ca2bc6d0133c25f719121e731849f','u25432238823456140b9d1f5ecc5a5680','uc9ef21dff7a3a3eec0d4d36aff433b26','u2fbf566d1f586e8535ba1dc9dcd2c4db'];//Taro Mid Bot Lu Disini Kntl
+const myBot = ['u6a66b6b389d27052f7c8ac0bdc2cee7e'];//Mid numaranı buraya yaz.. ADmin
 var banList = [];//Banned list
 var groupList = new Array();//Group list
 var vx = {};var midnornama,pesane,kickhim;var waitMsg = "no";//DO NOT CHANGE THIS
@@ -201,9 +197,7 @@ class LINE extends LineAPI {
 
          }
 
-           if(operation.type == 11 && this.stateStatus.blockupdategroup == 1) { //ada update
-           // op1 = group nya
-           // op2 = yang 'nge' update
+           if(operation.type == 11 && this.stateStatus.blockupdategroup == 1) { //Grup update
             if(isAdmin(operation.param2))
             {
             }
@@ -332,10 +326,7 @@ class LINE extends LineAPI {
               }
            }
 
-           if(operation.type == 19 && this.stateStatus.blockkick == 1) { //ada kick
-            // op1 = group nya
-            // op2 = yang 'nge' kick
-            // op3 = yang 'di' kick
+           if(operation.type == 19 && this.stateStatus.blockkick == 1) { //Grupkick
             if(isAdmin(operation.param3))
               {
                this._invite(operation.param1,[operation.param3]);
@@ -388,10 +379,7 @@ class LINE extends LineAPI {
 
         }
 
-        if(operation.type == 32 && this.stateStatus.blockcancel == 1) { //ada cancel
-          // op1 = group nya
-          // op2 = yang 'nge' cancel
-          // op3 = yang 'di' cancel
+        if(operation.type == 32 && this.stateStatus.blockcancel == 1) { //Grup cancel
             if(isAdmin(operation.param3))
               {
                this._invite(operation.param1,[operation.param3]);
@@ -1502,7 +1490,7 @@ this._sendMessage(seq,"You Are not owner...!");
       }
       
       if(txt == 'key') {
-			let botOwner = await this._client.getContacts([creatoR[0]]);
+			let botOwner = await this._client.getContacts([toLga[0]]);
             let { mid, displayName } = await this._client.getProfile();
 			let key2 = "\n\
 ====================\n\
