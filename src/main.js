@@ -1887,10 +1887,7 @@ let { listMember } = await this.searchGroup(seq.to);
                this._sendMessage(seq, 'I Love Hentai~');
         }
     }
-
-//Tab:CreateGroup <jumlah>-<NamaGrup>/<mid>
-//Tab:CreateGroup 100-NamaGrupnya/midkorban
-			
+		
         if(txt == '@bye') {
            if(isAdmin(seq.from) || isStaff(seq.from)){                    
            let txt = await this._sendMessage(seq, "Good bye "+ginfo.name+"😘😘");
