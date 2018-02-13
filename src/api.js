@@ -18,12 +18,9 @@ const {
 } = require('../curve-thrift/line_types');
 const imgArr = ['png','jpg','jpeg','gif','bmp','webp'];
 
-
 const PinVerifier = require('./pinVerifier');
 var config = require('./config');
 var moment = require('moment');
-var reqx = new LoginRequest();
-var reqxy = new LoginRequest();
 
 function isImg(param) {
     return imgArr.includes(param);
@@ -98,7 +95,7 @@ class LineAPI {
   _qrCodeLogin() {
     this.setTHttpClient();
     return new Promise((resolve, reject) => {
-    this._client.getAuthQrcode(true, 'CyberTK-IPAD',(err, result) => {
+    this._client.getAuthQrcode(true, 'THIRD-PC',(err, result) => {
       const qrcodeUrl = `line://au/q/${result.verifier}`;
       qrcode.generate(qrcodeUrl,{small: true});
       console.info(`\n\nlink qr code is: ${qrcodeUrl}`)
@@ -145,7 +142,7 @@ class LineAPI {
 				 reqx.password = rsaCrypto.credentials;
 				 reqx.keepLoggedIn = true;
 				 reqx.accessLocation = this.config.ip;
-				 reqx.systemName = 'CyberTK-PC';
+				 reqx.systemName = 'THIRD-PC';
 				 reqx.e2eeVersion = 0;
 				 try{
 					 this._client.loginZ(reqx,
@@ -240,6 +237,10 @@ class LineAPI {
     return await this._client.getGroupIdsInvited()
   }
 
+   _leaveGroup(group){
+      return this._client.leaveGroup(0, group);
+  }
+  
   async _acceptGroupInvitation(groupid) {
     this._client.acceptGroupInvitation(0,groupid);
     await this._getGroupsInvited();
