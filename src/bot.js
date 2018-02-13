@@ -1,5 +1,4 @@
 const LineConnect = require('./connect');
-const LINE = require('./main.js');
 console.info("\n\
 ╔══╗\n\
 ║██║\n\
