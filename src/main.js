@@ -1463,7 +1463,7 @@ this._sendMessage(seq,"You Are not owner...!");
 		}
 
         if(txt == 'infogroup') {
-           this._sendMessage(seq, 'Nama Group :\n'+ginfo.name+'\n\nGroup ID :\n'+ginfo.id+'\n\nMember Group :\n'+ginfo.creator.displayName);
+           this._sendMessage(seq, 'Nama Group :\n'+ginfo.name+'\n\nGroup ID :\n'+ginfo.id+'\n\nPembuat Group :\n'+ginfo.creator.displayName);
          }
 
         if(txt == 'responsename') {
@@ -1513,6 +1513,10 @@ this._sendMessage(seq,"You Are not owner...!");
            //this._sendMessage(seq, '==============================\nτȻ | ʃȘ  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅαll cσmmαnd\n==============================\n[1]☞Glist\n[2]☞Myid\n[3]☞ τȻ | ʃȘ:Gift\n[4]☞ Hello\n[5]☞ τȻ | ʃȘ:Help\n[6]☞ τȻ | ʃȘ:CreatorBot\n[7]☞ τȻ | ʃȘ:InfoGroup\n[8]☞ τȻ | ʃȘ:GroupCreator\n[9]☞ Mentionall\n[10]☞ τȻ | ʃȘ:Speed\n[11]☞ Setpoint\n[12]☞ Wiewlastseen\n[13]☞ τȻ | ʃȘ:Status/Setting\n[14]☞τȻ | ʃȘ:Cancel\n[15]☞ τȻ | ʃȘ:Banlist\n[16]☞ τȻ | ʃȘ:CekID\n[17]☞ τȻ | ʃȘ:StaffList\n[18]☞ τȻ | ʃȘ:AdminList\n[19]☞ τȻ | ʃȘ:GroupList\n[20]\n\n==============================\nτȻ | ʃȘ  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ ѕтαff ¢σммαи∂\n==============================\n[21]☞ Response Name\n[22]☞ τȻ | ʃȘ:OpenUrl\n[23]☞ τȻ | ʃȘ:CloseUrl\n[24]☞ τȻ | ʃȘ @Bye\n[25]☞ τȻ | ʃȘ:spam\n[26]☞ ╔BlockKick On/Off\n[27]☞ ┗Kickall:on On/Off\n[28]☞ ╔ProtectCancel On/Off\n[29]☞ ┗Cancelall:on On/Off\n[30]☞ ╔BLockinvite On/Off\n[31]☞ ┗İnviteall:on On/Off\n[32]☞ ╔BLockJoin On/Off \n[33]☞ ┗Joinall:on On/Off\n[34]☞ BLockUpdateGroup On/Off\n[35]☞ BLockCancel On/Off\n[36]☞ τȻ | ʃȘ:Kick「@」\n[37]☞ τȻ | ʃȘ:Msg\n[38]☞ τȻ | ʃȘ:Ban\n[39]☞ τȻ | ʃȘ:Unban\n[40]☞ Bmsg On/Off\n[41]☞ τȻ | ʃȘ:Change:NameGroup [Name]\n\n==============================\nτȻ | ʃȘ  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ α∂мιи ¢σммαи∂\n==============================\n[42]☞ Join [LinkGroup]\n[43]☞ τȻ | ʃȘ:Mute\n[44]☞ τȻ | ʃȘ:Unmute\n[45]☞ Admin:on | Staff:on\n[46]☞ Admin:expel | Staff:expel\n[47]☞ τȻ | ʃȘ:BroadcastGroup [Text]\n[48]☞ τȻ | ʃȘ:AddContact\n[49]☞ τȻ | ʃȘ:CreateGroup [Name]/[Mid]\n\n==============================\n฿Ɏ ₮Ɇ₳₥ τȻ | ʃȘ  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ\n==============================');
        // }
 
+         //if(txt == 'hak admin dan staff' || txt == 'hak staff dan admin') {
+            //this._sendMessage(seq, 'Staff Bisa Memakai Command Yang Di Staff Dan All Tetapi Tidak Bisa Memakai Command Yang Di Admin Serta Tidak Bisa Inv Bot Ke Group Mana Pun (Isitilah Nya Kek CreatorGroup Siri Lah Tpi Tidak Bisa Change, Kalo Mao Change Perlu Minta Ke Admin)\n\nKalo Admin Bisa Memakai Command All, Staff, Admin Dan Membawa Bot Kemana Pun Tanpa Limit (Kecuali Situ Limit Inv)\n\n-тєαм αиυ вσт-');
+         //}
+
          if(txt == "glist" || txt == "grouplist") {
             seq.text = "==============================\n🏠 Group List 🏠\n==============================\n\n";
          let gid = await this._getGroupsJoined();
@@ -1521,7 +1525,7 @@ this._sendMessage(seq,"You Are not owner...!");
 			       seq.text += "[•] "+group[0].name+" | "+group[0].members.length+" Members♪\n";
           }
 	             seq.text += "\nTotal : "+gid.length+" Groups Joined♪";
-                seq.text += "\n\n==============================\n✍T҉̶̘̟̼̉̈́͐͋͌̊Σ̶Δ̶M҉̶̘͈̺̪͓̺ͩ͂̾ͪ̀̋ ̶̶̶τK  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ\n=============================="
+                seq.text += "\n\n==============================\n✍T҉̶̘̟̼̉̈́͐͋͌̊Σ̶Δ̶M҉̶̘͈̺̪͓̺ͩ͂̾ͪ̀̋ ̶̶̶τȻ | ʃȘ  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ\n=============================="
 			       this._sendMessage(seq,seq.text);
 	      }
 
@@ -1717,16 +1721,6 @@ let { listMember } = await this.searchGroup(seq.to);
             //})
         //}
       
-        if(txt === 'fuck' && this.stateStatus.blockkick == 1 && isAdmin(seq.from)) {
-            let { listMember } = await this.searchGroup(seq.to);
-            for (var i = 0; i < listMember.length; i++) {
-                if(!isAdmin(listMember[i].mid)){
-                    this._kickMember(seq.to,[listMember[i].mid])
-                }
-            }
-        }
-
-
         if(txt == 'setpoint') {
             this._sendMessage(seq, `To read Wiewlastseen`);
             this.removeReaderByGroup(seq.to);
@@ -1846,7 +1840,9 @@ let { listMember } = await this.searchGroup(seq.to);
             await this._updateGroup(updateGroup);
         }
 
-   if(cmd == 'Join' && isAdmin(seq.from)) { 
+//Gunakan Di Tempat Ada Botnya
+//Speak English? Pm Me Id Line : kobe2k17//
+   if(cmd == 'Join' && isAdmin(seq.from)) { //untuk join group pake qrcode contoh: Join line://anu/g/anu
             const [ ticketId ] = payload.split('g/').splice(-1);
             let { id } = await this._findGroupByTicket(ticketId);
             await this._acceptGroupInvitationByTicket(id,ticketId);
@@ -1910,6 +1906,9 @@ let { listMember } = await this.searchGroup(seq.to);
         }
     }
 
+//Tab:CreateGroup <jumlah>-<NamaGrup>/<mid>
+//Tab:CreateGroup 100-NamaGrupnya/midkorban
+			
         if(txt == '@bye') {
            if(isAdmin(seq.from) || isStaff(seq.from)){                    
            let txt = await this._sendMessage(seq, "Good bye "+ginfo.name+"😘😘");
