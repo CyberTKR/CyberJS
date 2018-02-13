@@ -1,6 +1,13 @@
 const LineAPI = require('./api');
+const request = require('request');
+const fs = require('fs');
+const unirest = require('unirest');
+const webp = require('webp-converter');
+const path = require('path');
+const rp = require('request-promise');
+const config = require('./config');
 const { Message, OpType, Location } = require('../curve-thrift/line_types');
-let exec = require('child_process').exec;
+//let exec = require('child_process').exec;
 
 var myStaff = [];//Mid numaranı buraya yaz.. Staff
 
