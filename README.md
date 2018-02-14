@@ -1,18 +1,13 @@
 <table border=5 width=50% cellpadding=5 cellspacing=5>>
     <tr>
-	  <h1> <th colspan=4> CyberTK  </th></h1>
+	  <h1> <th colspan=4>(O)╚══╝║♫ ♪ ♫ ♪▄ █ ▄ █ ▄ ▄ █ ▄ █ ▄ █ in- - - - - - - - - - - -●Max </th></h1>
     </tr>
 </table>
 </br><b>✦    Continue To Follow Cyber-TK </b>
 </br><b>✦    Node -V 8.4.0 </b>
 </br><b>✦    Nodejs Version update  </b>
 </br><b>✦   npm i -g npm </b>
-#
--    ║(O)║♫ ♪ ♫ ♪
--╚══╝
--▄ █ ▄ █ ▄ ▄ █ ▄ █ ▄ █
--Min- - - - - - - - - - - -●Max 
-#
+</hr>
 </br><b>✦   Bot İs Running </b>
 </br><b>✦    http://github.com/CyberTKR/CyberJS.git </b>
 </br><b>✦   cd CyberJS & npm install </b>
