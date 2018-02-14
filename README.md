@@ -37,6 +37,6 @@
 <br/><b>✦ İnstagram Account ➥<a href="http://instagram.com/_aquariusman " title="Tolga instagram Account"> _aquariusman </a> </b>
 <br/><b>✦Youtube Channel ➥<a href="https://youtube.com/channel/UC9AyYKWovERexyOFy3h4rdw" title="CyberTK Youtube Channel"> CyberTK Official Channel </a></b>
 </br>
-<a href="mailto:tolgajames2@gmail.com"> <img src="https://github.com/CyberTKR/CyberJS/blob/master/CyberJS/curve-thrift/mail.png"/> </a>
+<a href="mailto:tolgajames2@gmail.com"> <img src="https://github.com/CyberTKR/CyberJS/blob/master/CyberJS/curve-thrift/mail.png" width=%20 /> </a>
 </br><b><a href="mailto:tolgajames2@gmail.com">Maillerinizi yukarıda Mail Ögesine tıklayarak gönderebilirsiniz. <b> </a>
  </html>
