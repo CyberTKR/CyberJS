@@ -34,6 +34,6 @@
 -    Instagram account : http://instagram.com/_aquariusman 
 -    Youtube channnel : https://m.youtube.com/channel/UC9AyYKWovERexyOFy3h4rdw
 # <b> Mail </b>
-<a href="mailto:tolgajames2@gmail.com" title="tıklayınız"> <img src="/CyberTKR/CyberJS/blob/master/CyberJS/indir.png" width=50 height=50 /> </a>
+<a href="mailto:tolgajames2@gmail.com" title="tıklayınız"> <img src="/CyberTKR/CyberJS/blob/master/CyberJS/mail.png" width=50 height=50 /> </a>
 
  
