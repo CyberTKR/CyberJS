@@ -38,6 +38,7 @@
 <br/><b>✦Youtube Channel ➥<a href="https://youtube.com/channel/UC9AyYKWovERexyOFy3h4rdw" title="CyberTK Youtube Channel"> CyberTK Official Channel </a></b>
 </br>
 </br>
-<br/><b>✦<a href="mailto:tolgajames2@gmail.com">To send a mail, just click on the Mail Icon below.↴⇩ <b> </a>
+<br/><b>✦<a href="mailto:tolgajames2@gmail.com">To send a mail, just click,<b> </a>
+</br><b>✦<a href="mailto:tolgajames2@gmail.com">On the Mail Icon below.↴⇩<b> </a> 	
 </br><a href="mailto:tolgajames2@gmail.com"> <img src="https://github.com/CyberTKR/CyberJS/blob/master/CyberJS/curve-thrift/mail.png" width=100/> </a>
  </html>
