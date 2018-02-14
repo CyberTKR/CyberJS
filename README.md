@@ -36,5 +36,6 @@
 </br><b>✦   kullanilmasindan cybertk sorumlu degildir. </b>
 <br/><b>✦ İnstagram Account ➥<a href="http://instagram.com/_aquariusman " title="Tolga instagram Account"> _aquariusman </a> </b>
 <br/><b>✦Youtube Channel ➥<a href="https://youtube.com/channel/UC9AyYKWovERexyOFy3h4rdw" title="CyberTK Youtube Channel"> CyberTK Official Channel </a></b>
+</br>
 <a href="/CyberTKR/CyberJS/blob/master/CyberJS/Mail-icon.png" target="_blank"><img src="/CyberTKR/CyberJS/blob/master/CyberJS/Mail-icon.png" alt="CyberTK" style="max-width:25%;"></a>
  </html>
