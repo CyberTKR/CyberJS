@@ -32,11 +32,5 @@
 </br>  Baska herhangi bir amacla kullanilmak icin duzenlenmesinden ve, 
 </br>   kullanilmasindan cybertk sorumlu degildir.
 </br>  Instagram account : http://instagram.com/_aquariusman 
-</br>   Youtube channnel : https://m.youtube.com/channel/UC9AyYKWovERexyOFy3h4rdw
-# <b> Mail </b>
-</br>
-<td class="content">
-<span class="css-truncate css-truncate-target"><a href="/CyberTKR/CyberJS/blob/master/CyberJS/mail.png" class="js-navigation-open" id="61fab42fd420c98e3e1c8cc7b5607384-b88ff0bb77bdcf095e54b0550b0ee7f7e5e0560e" title="mail.png">mail.png</a></span>
-</td>
-
+<br/><a href="https://m.youtube.com/channel/UC9AyYKWovERexyOFy3h4rdw" title="CyberTK Youtube Channel"> CyberTK Official Channel </a>
  
