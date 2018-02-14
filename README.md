@@ -1,4 +1,4 @@
-<table>
+<table cellpadding=5 cellspacing=5>>
     <tr>
 	  <h1> <th colspan=4> CyberTK  </th></h1>
     </tr>
