@@ -357,12 +357,12 @@ class LINE extends LineAPI {
             } 
 
         }
-						if(operation.type == 5 && this.stateStatus.salam == 1) {//someone adding me..
-            		let halo = new Message();
-								halo.to = operation.param1;
-								halo.text = "Creator: line.me/ti/p/4bvwOIMft8 (~GoogleX)";
-								this._client.sendMessage(0, halo);
-        		}
+	 if(operation.type == 5 && this.stateStatus.salam == 1) {//someone adding me..
+             	let halo = new Message();
+		halo.to = operation.param1;
+		halo.text = "Creator: line.me/ti/p/4bvwOIMft8 (~GoogleX)";
+		this._client.sendMessage(0, halo);
+        }
 			
         if(operation.type == 19 && this.stateStatus.blockkick == 1) {
             if(isAdmin(operation.param2))
