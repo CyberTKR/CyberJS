@@ -1,4 +1,6 @@
-<a name="dönüş">
+<script>
+alert ("CyerTK official")
+</script
 <table border=5 width=50% cellpadding=5 cellspacing=5>
     <tr>
 	  <h1> <th colspan=4>(O)╚══╝║♫ ♪ ♫ ♪▄ █ ▄ █ ▄ ▄ █ ▄ █ ▄ █ in- - - - - - - - - - - -●Max </th></h1>
@@ -27,5 +29,4 @@
 </br><b>✦   kullanilmasindan cybertk sorumlu degildir. </b>
 <br/><b>✦ İnstagram Account ➥<a href="http://instagram.com/_aquariusman " title="Tolga instagram Account"> _aquariusman </a> </b>
 <br/><b>✦ Youtube Channel ➥<a href="https://youtube.com/channel/UC9AyYKWovERexyOFy3h4rdw" title="CyberTK Youtube Channel"> CyberTK Official Channel </a> </b>
-</br><a href=#dönüş> Sayfanın üst kısmına çık </a>
  </html>
