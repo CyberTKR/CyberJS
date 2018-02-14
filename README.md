@@ -1,8 +1,8 @@
 
 <h1> CyberTK </h1>
-<table border=5 width=25% cellpadding=5 cellspacing=5>
+<table>
     <tr>
-	   <th colspan=4>CyberTK  </th>
+	   <th colspan=4> CyberTK  </th>
     </tr>
 </table>
 </br><b>✦    Continue To Follow Cyber-TK </b>
