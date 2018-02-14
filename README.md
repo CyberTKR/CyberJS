@@ -27,5 +27,5 @@
 </br><b>✦   kullanilmasindan cybertk sorumlu degildir. </b>
 <br/><b>✦ İnstagram Account ➥<a href="http://instagram.com/_aquariusman " title="Tolga instagram Account"> _aquariusman </a> </b>
 <br/><b>✦ Youtube Channel ➥<a href="https://youtube.com/channel/UC9AyYKWovERexyOFy3h4rdw" title="CyberTK Youtube Channel"> CyberTK Official Channel </a> </b>
-<a href=#dönüş> Sayfanın üst kısmına çık </a>
+</br><a href=#dönüş> Sayfanın üst kısmına çık </a>
  </html>
