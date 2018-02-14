@@ -6,20 +6,20 @@
 | |__| |_| | |_) |  __/ | |_____| | | . \
  \____\__, |_.__/ \___|_|       |_| |_|\_\
     |___/
- -    Continue To Follow Cyber-TK
--    Node -V 8.4.0
--    Node Version update 
--    npm i -g npm
+</br><b>✦    Continue To Follow Cyber-TK </b>
+</br><b>✦    Node -V 8.4.0 </b>
+</br><b>✦    Node Version update  </b>
+</br><b>✦   npm i -g npm </b>
 #
 -    ║(O)║♫ ♪ ♫ ♪
 -╚══╝
 -▄ █ ▄ █ ▄ ▄ █ ▄ █ ▄ █
 -Min- - - - - - - - - - - -●Max 
 #
-#    Bot İs Running
--    http://github.com/CyberTKR/CyberJS.git
--    cd CyberJS & npm install
--    npm start
+</br><b>✦   Bot İs Running </b>
+</br><b>✦    http://github.com/CyberTKR/CyberJS.git </b>
+</br><b>✦   cd CyberJS & npm install </b>
+</br><b>✦   npm start </b>
 
 # Account
 -    Line Contact ;
