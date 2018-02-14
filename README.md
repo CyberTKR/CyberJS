@@ -37,5 +37,5 @@
 <br/><b>✦ İnstagram Account ➥<a href="http://instagram.com/_aquariusman " title="Tolga instagram Account"> _aquariusman </a> </b>
 <br/><b>✦Youtube Channel ➥<a href="https://youtube.com/channel/UC9AyYKWovERexyOFy3h4rdw" title="CyberTK Youtube Channel"> CyberTK Official Channel </a></b>
 </br>
-<p><button><img src=""<a href="mailto:cybertk7@yandex.com"> Buraya Basarak Mail Atabilirsiniz.</a></button></p>
+<p><button> <a href="mailto:cybertk7@yandex.com"> Buraya Basarak Mail Atabilirsiniz. </a> </button> </p>
  </html>
