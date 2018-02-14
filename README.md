@@ -40,5 +40,5 @@
 </br>
 <p><b> <a href="mailto:tolgajames2@gmail.com">Buraya Tıklayarak Mail Atabilirsiniz. </a> </b> </p>
 </br>
-<p><button><img src="https://drive.google.com/open?id=14SxA5IGkd9IsbtwMzcnrTSbzsxnxAwcj"/><a href="mailto:cybertk7@yandex.com"> Buraya Basarak Mail Atabilirsiniz.</a></button></p>
+<p><button><img src="https://drive.google.com/open?id=14SxA5IGkd9IsbtwMzcnrTSbzsxnxAwcj" width=100% /><a href="mailto:cybertk7@yandex.com"> Buraya Basarak Mail Atabilirsiniz.</a></button></p>
  </html>
