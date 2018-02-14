@@ -32,6 +32,7 @@
 </br>    Grup savunmasi amacli kullanilmalidir.
 </br>  Baska herhangi bir amacla kullanilmak icin duzenlenmesinden ve, 
 </br>   kullanilmasindan cybertk sorumlu degildir.
+<br/><b> İnstagram Account ➥<a href="http://instagram.com/_aquariusman " title="Tolga instagram Account"> _aquariusman </a> </b>
 </br>  Instagram account : http://instagram.com/_aquariusman 
-- <br/><b> Youtube Channel ➥Click<a href="https://m.youtube.com/channel/UC9AyYKWovERexyOFy3h4rdw" title="CyberTK Youtube Channel"> CyberTK Official Channel </a> </b>
+<br/><b> Youtube Channel ➥<a href="https://youtube.com/channel/UC9AyYKWovERexyOFy3h4rdw" title="CyberTK Youtube Channel"> CyberTK Official Channel </a> </b>
  </html>
