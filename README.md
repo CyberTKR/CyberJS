@@ -1,6 +1,6 @@
 <script>
 alert ("CyerTK official")
-</script
+</script>
 <table border=5 width=50% cellpadding=5 cellspacing=5>
     <tr>
 	  <h1> <th colspan=4>(O)╚══╝║♫ ♪ ♫ ♪▄ █ ▄ █ ▄ ▄ █ ▄ █ ▄ █ in- - - - - - - - - - - -●Max </th></h1>
