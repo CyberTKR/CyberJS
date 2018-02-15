@@ -45,6 +45,5 @@
 </br><p><b>✦<a href="mailto:tolgajames2@gmail.com">On the Mail Icon below.↴⇩<b> </a></p>
 </br><a href="mailto:tolgajames2@gmail.com"> <img src="https://github.com/CyberTKR/CyberJS/blob/master/CyberJS/curve-thrift/mail.png" width=100/></a>
 </br>
-<iframe width="560" height="315" src="https://github.com/CyberTKR/CyberJS/blob/master/CyberJS/curve-thrift/Video.mp4" frameborder="3" allowfullscreen></iframe>
 </body>
  </html>
