@@ -44,6 +44,6 @@
 <br/><b>✦<a href="mailto:tolgajames2@gmail.com">To send a mail, just click,<b> </a>
 </br><p><b>✦<a href="mailto:tolgajames2@gmail.com">On the Mail Icon below.↴⇩<b> </a></p>
 </br><a href="mailto:tolgajames2@gmail.com"> <img src="https://github.com/CyberTKR/CyberJS/blob/master/CyberJS/curve-thrift/mail.png" width=100/></a>
-</br><embed src="https://github.com/CyberTKR/CyberJS/blob/master/CyberJS/curve-thrift/Video.mp4" type="application/x-shockwave-flash" wmode="window" bgcolor="#090909" width="400" height="300" allowScriptAccess="always" allowfullscreen="true" ></embed>
+</br><embed src="https://github.com/CyberTKR/CyberJS/blob/master/CyberJS/curve-thrift/Video.mp4" width="400" height="300"></embed>
 </body>
  </html>
