@@ -45,5 +45,50 @@
 </br><p><b>✦<a href="mailto:tolgajames2@gmail.com">On the Mail Icon below.↴⇩<b> </a></p>
 </br><a href="mailto:tolgajames2@gmail.com"> <img src="https://github.com/CyberTKR/CyberJS/blob/master/CyberJS/curve-thrift/mail.png" width=100/></a>
 </br>
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Oynat/Durdur</button> 
+  <button onclick="makeBig()">Büyük</button>
+  <button onclick="makeSmall()">Küçük</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br> 
+  <video id="video1" width="420">
+    <source src="Video.mp4" type="Video/mp4">
+    <source src="Video.ogg" type="Video/ogg">
+    Tarayıcınız video etiketini desteklemiyor.
+  </video>
+</div> 
+
+<script> 
+var myVideo=document.getElementById("video1"); 
+
+function playPause()
+{ 
+if (myVideo.paused) 
+  myVideo.play(); 
+else 
+  myVideo.pause(); 
+} 
+
+function makeBig()
+{ 
+myVideo.width=560; 
+} 
+
+function makeSmall()
+{ 
+myVideo.width=320; 
+} 
+
+function makeNormal()
+{ 
+myVideo.width=420; 
+} 
+</script> 
+</body> 
+</html>
 </body>
  </html>
