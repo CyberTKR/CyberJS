@@ -46,7 +46,5 @@
 </br><a href="mailto:tolgajames2@gmail.com"> <img src="https://github.com/CyberTKR/CyberJS/blob/master/CyberJS/curve-thrift/mail.png" width=100/></a>
 </br>
 </br>
-</br>
-<embed width="520" height="345" src="https://www.youtube.com/watch?v=uEH3fvj0hQ4" frameborder="0"></embed>
 </body>
  </html>
