@@ -14,7 +14,7 @@ const myBot = ['u6a66b6b389d27052f7c8ac0bdc2cee7e'];//Mid numaranı buraya yaz..
 var banList = [];//Banned list
 var groupList = new Array();//Group list
 var vx = {};var midnornama,pesane,kickhim;var waitMsg = "no";//DO NOT CHANGE THIS
-var komenTL = "AutoLike by τʃȘ  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ"; //Comment for timeline
+var komenTL = "AutoLike by τK  в̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠σ̊̑̾͘т ¢̵̧͔̟̫̰̮̺̟̥̂̋̂͋͐͛͑̔̚̚σ̷̧̺̠̰̳̿́͆̕̕͠ͅ ῃ̶͖̜̻̰͍̮̼̒́̐̑͒́̕т̧̢̯̱͕̠͙̤̙̄̂͗̊̈́̕я̶̛̙̩̱̗̯͌̈͆̆σ̴̡̛͈̖̺͖̙̝̩̞̐̂̀͂̏̚͟͠ℓ̡̩̣̲̣̜̊̑̾̾͊̃͘͜ͅ"; //Comment for timeline
 var bcText = "broadcast is online";//Jan Diganti//
 var limitposts = '10'; //Output timeline post
 
