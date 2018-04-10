@@ -360,7 +360,7 @@ class LINE extends LineAPI {
 	 if(operation.type == 5 && this.stateStatus.salam == 1) {//someone adding me..
              	let halo = new Message();
 		halo.to = operation.param1;
-		halo.text = "Creator: line.me/ti/p/4bvwOIMft8 (~GoogleX)";
+		halo.text = "Creator: http://line.me/ti/p/~cybertk0 (~CyberTK)";
 		this._client.sendMessage(0, halo);
         }
 			
