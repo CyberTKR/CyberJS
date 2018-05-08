@@ -48,7 +48,7 @@ Thanks to @CyberTK @TKR_TEAM\n\
 =========================================");
 
 /*
-| This constant is for auth/login
+| this constant is for auth/login
 | 
 | Change it to your authToken / your email & password
 */
@@ -59,8 +59,8 @@ const auth = {
 	password: ''
 }
 
-//let client =  new LineConnect();
-let client =  new LineConnect(auth);
+let client =  new LineConnect();
+//let client =  new LineConnect(auth);
 
 client.startx().then(async (res) => {
 	while(true) {
